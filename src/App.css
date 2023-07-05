@@ -1,90 +1,41 @@
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* ===============================Randm Rats====================================== */
+.rat_bg {
+  background: url(./assets/png/bg_mouse.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-body {
-  background: #fff;
+.color_red {
+  color: #f61529;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 500px;
-  height: 300px;
-  background: #f1f1f1;
-  margin: 100px auto 0;
-  word-break: break-all;
-  border: 1px solid rgba(0, 0, 0, 0.274);
+.radius_69 {
+  border-radius: 69.841px;
 }
-
-.bloc-tabs {
-  display: flex;
+.bg_pink {
+  background-color: rgba(246, 21, 41, 1);
 }
-.tabs {
-
-  padding: 15px;
-  text-align: center;
-  width: 50%;
-  background: rgba(128, 128, 128, 0.075);
+.curser_pointer {
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-  box-sizing: content-box;
-  position: relative;
-  outline: none;
 }
-.tabs:not(:last-child){
-  border-right: 1px solid rgba(0, 0, 0, 0.274);
+@media (min-width: 1200px) {
+  .vh_100 {
+    height: 100vh;
+  }
 }
-
-.active-tabs  {
-  background: white;
-  border-bottom: 1px solid transparent;
+@media (max-width: 576px) {
+  .w_sm_100 {
+    width: 35px;
+    height: 30px;
+  }
 }
-
-.active-tabs::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 5px;
-  background: rgb(88, 147, 241);
-}
-
-
-
-button {
-  border: none;
-  
-}
-.content-tabs {
-  flex-grow : 1;
-}
-.content {
-  background: white;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-.content h2 {
-  padding: 0px 0 5px 0px;
-}
-.content hr {
-  width: 100px;
-  height: 2px;
-  background: #222;
-  margin-bottom: 5px;
-}
-.content p {
-  width: 100%;
-  height: 100%;
-}
-.active-content {
-  display: block;
+@media (max-width: 768px) {
+  .overflow_x_scroll {
+    overflow-x: scroll;
+  }
 }

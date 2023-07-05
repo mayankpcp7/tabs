@@ -1,12 +1,11 @@
-
-import './App.css';
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
-import Tabs from './components/Tabs';
+import Tabs from "./components/Tabs";
+import RandomRats from "./components/RandomRats";
 function App() {
   return (
     <>
-    <Tabs/>
-    
+      <RandomRats />
     </>
   );
 }
